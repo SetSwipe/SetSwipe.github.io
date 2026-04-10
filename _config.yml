@@ -20,17 +20,24 @@
 
 title: SetSwipe
 email: ""
-description: >- # this means to ignore newlines until "baseurl:"
-  SetSwipe website.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://setswipe.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
+description: >-
+  Capstone web presence for SetSwipe, a collaborative swim workout builder
+  built with React Native, Expo, Django, and watchOS.
+baseurl: ""
+url: "https://setswipe.github.io"
 github_username: SetSwipe
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
+permalink: pretty
+
+header_pages:
+  - Download.md
+  - Team.md
+  - Tutorial.md
+
+exclude:
+  - .jekyll-cache/
+  - _site/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
