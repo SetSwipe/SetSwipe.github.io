@@ -8,26 +8,55 @@
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace }}">
     <link rel="icon" type="image/png" href="{{ '/assets/images/setswipe-logo.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script>
+      (function () {
+        var storedTheme = null;
+        try {
+          storedTheme = localStorage.getItem("setswipe-theme");
+        } catch (error) {}
+        var theme = storedTheme || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
   </head>
   <body>
     <div class="site-shell">
       <header class="site-header">
         <div class="wrap header-inner">
-          <a class="brand" href="{{ '/' | relative_url }}">
-            <img
-              class="brand-logo"
-              src="{{ '/assets/images/setswipe-logo.png' | relative_url }}"
-              alt="SetSwipe logo"
-            >
-            <span class="brand-text">SetSwipe</span>
-          </a>
+          <div class="header-top">
+            <a class="brand" href="{{ '/' | relative_url }}">
+              <img
+                class="brand-logo"
+                src="{{ '/assets/images/setswipe-logo.png' | relative_url }}"
+                alt="SetSwipe logo"
+              >
+              <span class="brand-text">SetSwipe</span>
+            </a>
 
-          <nav class="site-nav" aria-label="Primary navigation">
-            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>About</a>
-            <a href="{{ '/team/' | relative_url }}" {% if page.url == '/team/' %}aria-current="page"{% endif %}>Team</a>
-            <a href="{{ '/download/' | relative_url }}" {% if page.url == '/download/' %}aria-current="page"{% endif %}>Download</a>
-            <a href="{{ '/tutorial/' | relative_url }}" {% if page.url == '/tutorial/' %}aria-current="page"{% endif %}>Tutorial</a>
-          </nav>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="site-nav-panel"
+            >
+              <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+            </button>
+          </div>
+
+          <div class="header-actions" id="site-nav-panel">
+            <nav class="site-nav" aria-label="Primary navigation">
+              <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>About</a>
+              <a href="{{ '/team/' | relative_url }}" {% if page.url == '/team/' %}aria-current="page"{% endif %}>Team</a>
+              <a href="{{ '/download/' | relative_url }}" {% if page.url == '/download/' %}aria-current="page"{% endif %}>Download</a>
+              <a href="{{ '/tutorial/' | relative_url }}" {% if page.url == '/tutorial/' %}aria-current="page"{% endif %}>Tutorial</a>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+              <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+              <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -42,5 +71,49 @@
         </div>
       </footer>
     </div>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var themeButton = document.querySelector(".theme-toggle");
+        var menuButton = document.querySelector(".menu-toggle");
+        var actionsPanel = document.querySelector(".header-actions");
+
+        var applyTheme = function (theme) {
+          root.setAttribute("data-theme", theme);
+          if (themeButton) {
+            themeButton.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+          }
+        };
+
+        var currentTheme = root.getAttribute("data-theme") || "dark";
+        applyTheme(currentTheme);
+
+        if (themeButton) {
+          themeButton.addEventListener("click", function () {
+            currentTheme = currentTheme === "dark" ? "light" : "dark";
+            applyTheme(currentTheme);
+            try {
+              localStorage.setItem("setswipe-theme", currentTheme);
+            } catch (error) {}
+          });
+        }
+
+        if (menuButton && actionsPanel) {
+          menuButton.addEventListener("click", function () {
+            var isOpen = actionsPanel.classList.toggle("is-open");
+            root.classList.toggle("menu-open", isOpen);
+            menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          });
+
+          window.addEventListener("resize", function () {
+            if (window.innerWidth > 720) {
+              actionsPanel.classList.remove("is-open");
+              root.classList.remove("menu-open");
+              menuButton.setAttribute("aria-expanded", "false");
+            }
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
