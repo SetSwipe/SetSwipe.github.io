@@ -9,18 +9,13 @@ permalink: /
     <p class="eyebrow">Capstone Project</p>
     <h1>SetSwipe helps swimmers build workouts faster and together.</h1>
     <p>
-      SetSwipe is a collaborative swim workout platform for planning practices
-      faster. Swimmers can browse workouts, swipe through sets, build solo or
-      group sessions, and track workout history.
+      Swimmers who are transitioning from a structured environment such as a competitive high school team to a more casual environment swimming on their own often face challenges in maintaining engagement with the sport. The loss of the team environment and daily coaching can lead to a decline in motivation and difficulty in creating effective workouts. Current fitness apps lack the tools for a swimming-focused audience, and fail to address the social aspects of swimming. This project is a mobile application designed to bridge this gap for swimmers with no coach.
     </p>
     <p>
-      The system includes a mobile app, a Django backend, and a watchOS
-      companion. Key features include profiles, friends, collaborative workout
-      sessions, library filtering, and history tracking.
+      This application provides a platform for swimmers to build, share, and schedule workouts, whether training solo or collaborating with friends and former teammates. The main feature of this app is a swim set building interface similar to how a music app like Spotify allows users to build playlists. It will also have a scheduling tool which simplifies coordinating times to swim with friends.
     </p>
     <p>
-      SetSwipe was developed at the University of Utah as a 2025-2026 capstone
-      project.
+      While providing a useful set building platform for solo swimmers, this solution also mitigates the common social obstacles swimmers often face when trying to swim individually. Merging the creation of workouts with social coordination recreates the structured dynamic of a team environment. This solution provides a novel, user centric approach to solving the problems of a niche athletic community, demonstrating the ability for technology to support swimmers in their long term health and wellness.
     </p>
     <div class="button-row">
       <a class="button button-primary" href="{{ '/tutorial/' | relative_url }}">See How It Works</a>
@@ -48,26 +43,12 @@ permalink: /
       </div>
     </div>
 
-    <div class="diagram">
-      <h2>System Snapshot</h2>
-      <div class="diagram-flow">
-        <div class="diagram-box">
-          <strong>Mobile Client</strong><br>
-          Login, library, swiping, group creation, profiles, workout history
-        </div>
-        <div class="diagram-arrow">&darr;</div>
-        <div class="diagram-box">
-          <strong>Django Services</strong><br>
-          Accounts, friends, workouts, synchronization, collaborative session state
-        </div>
-        <div class="diagram-arrow">&darr;</div>
-        <div class="diagram-box">
-          <strong>Watch Companion</strong><br>
-          Starts workouts, tracks reps and sets, and supports future live phone sync
-        </div>
-      </div>
+    <div class="photo-frame hero-library-frame">
+      <img class="hero-library-image" src="{{ '/assets/media/library.jpg' | relative_url }}" alt="SetSwipe workout library">
     </div>
+
   </div>
+
 </section>
 
 <section class="card-grid">
@@ -92,37 +73,4 @@ permalink: /
       APIs, and a watchOS SwiftUI prototype.
     </p>
   </article>
-</section>
-
-<section class="photo-panel">
-  <div class="photo-frame">
-    <img src="{{ '/assets/images/setswipe-logo.png' | relative_url }}" alt="SetSwipe logo">
-  </div>
-  <div>
-    <h2>Feature Highlights</h2>
-    <ul class="list">
-      <li>Workout library with recent items, filtering, search, and deletion support.</li>
-      <li>Manual, automatic, and swipe-driven workout creation flows.</li>
-      <li>Group workout setup with participant selection and collaborative lobby management.</li>
-      <li>Profiles, friend requests, QR-based sharing, leaderboard hooks, and workout history.</li>
-      <li>Watch companion scaffolding for set tracking and future phone-to-watch transfers.</li>
-    </ul>
-    <p class="caption">
-      Current repo media includes the logo and team image. App screenshots and
-      demo captures are not available yet.
-    </p>
-  </div>
-</section>
-
-<section class="panel">
-  <h2>Development Context</h2>
-  <p>
-    The frontend README covers Expo setup on Windows and macOS, while the
-    backend README covers Python setup, local configuration, migrations, and
-    testing. Together they show SetSwipe is a real multi-surface system.
-  </p>
-  <p>
-    This work was produced by a University of Utah capstone team during the
-    2025-2026 academic year.
-  </p>
 </section>

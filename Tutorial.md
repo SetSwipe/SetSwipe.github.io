@@ -7,11 +7,9 @@ permalink: /tutorial/
 <section class="hero hero-compact">
   <div class="hero-copy">
     <p class="eyebrow">Quick Tutorial</p>
-    <h1>How a user would work with SetSwipe.</h1>
+    <h1>How to use SetSwipe</h1>
     <p>
-      This page uses the project READMEs and current app structure to summarize
-      how SetSwipe is installed, launched, and used. Videos and screen
-      recordings are not available yet.
+      Our app incorparates familiar UI patterns for quick and intuitive use.
     </p>
   </div>
 </section>
