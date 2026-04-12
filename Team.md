@@ -114,9 +114,21 @@ permalink: /team/
       <h2>Jaxon Smith</h2>
     </div>
     <p>
-      Biography coming soon. Degree details, interests, and project work still
-      need to be added.
+      My name is Jaxon Smith, I am a student at the University of Utah, pursuing a BS/MS in Computer Science and Computing, with both tracks in Artificial Intelligence. I have focused on back end development, focusing on using data to find ways to improve and broaden the audience of tools. My passion comes from wanting to build useful and meaningful tools and systems using software since it allows for a low cost and barrier of entry both for use and development. 
     </p>
-    <p class="contact-line">Contact: coming soon</p>
+    <p>
+      On campus I am involved with the Data Science club, and have hosted a workshop on Agentic coding workflows. I am also a teaching assistant for CS 4150 (Algorithms) and have formerly been a teaching assistant for CS 3190 (Foundations of Data Analysis) and CS 2420 (Data Structures and Algorithms).
+    </p>
+    <p>
+      Outside of computing I have been an active hockey player for 15+ years, and enjoy riding on my custom built balance board based on the open source VESC project (essentially a Onewheel). My ideas for projects often come from wanting to improve or alter some fun experience or hobby of mine or wanting to learn a new skill. Some of my favorites have been using a microcontroller to connect my driving simulator to a remote control car, or creating a virtual sandbox for the famous Raspberry Pi line following a car program.
+    </p>
+    <p class="contact-line">
+      Email:
+      <a href="mailto:smithjaxon2638@gmail.com">smithjaxon2638@gmail.com</a>
+    </p>
+    <p class="contact-line">
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/jaxond-smith/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jaxond-smith/</a>
+    </p>
   </article>
 </section>
