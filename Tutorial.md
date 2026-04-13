@@ -199,9 +199,7 @@ permalink: /tutorial/
       <p class="eyebrow">Profile 4</p>
       <h2>Watch Tutorial</h2>
       <p>
-        The watch companion focuses on timing and session control. It is a
-        lightweight support tool for swimmers who want quick feedback while a
-        workout is underway.
+        The watch companion allows live workout viewing, including an on-pace/behind-pace indicator.
       </p>
     </div>
 
@@ -211,8 +209,8 @@ permalink: /tutorial/
           <span class="gif-placeholder">GIF 1</span>
         </div>
         <figcaption>
-          <p class="tutorial-media-caption">Start the session timer</p>
-          <p class="tutorial-media-detail">Use the watch app to begin a session and keep the timer visible without pulling out your phone.</p>
+          <p class="tutorial-media-caption">Record a workout on your Apple watch</p>
+          <p class="tutorial-media-detail">At the pool, click “Record workout” then “Track with watch” to view the workout live on your Apple watch. This application tracks your distance to keep you updated in real time about your pace, then sends the completed workout back to your phone to show in your history.</p>
         </figcaption>
       </figure>
 
@@ -221,8 +219,38 @@ permalink: /tutorial/
           <span class="gif-placeholder">GIF 2</span>
         </div>
         <figcaption>
-          <p class="tutorial-media-caption">Track reps and sets</p>
-          <p class="tutorial-media-detail">Monitor reps, set progression, and the current interval so you can stay focused on the workout itself.</p>
+          <p class="tutorial-media-caption">Start the session</p>
+          <p class="tutorial-media-detail">Enable water lock and view the first set.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <span class="gif-placeholder">GIF 3</span>
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">View a set</p>
+          <p class="tutorial-media-detail">View information about the set, including reps, effort and interval while you swim.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <span class="gif-placeholder">GIF 3</span>
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">View rest</p>
+          <p class="tutorial-media-detail">See a countdown of how much rest you have left, as well as the upcoming set.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <span class="gif-placeholder">GIF 3</span>
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">Pace indicator</p>
+          <p class="tutorial-media-detail">A green ring indicates you are on pace, while a red one indicates behind pace.</p>
         </figcaption>
       </figure>
 
@@ -232,7 +260,17 @@ permalink: /tutorial/
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Pause or end cleanly</p>
-          <p class="tutorial-media-detail">Pause, resume, or end the session from the wrist when you need a quick break or a finished workout.</p>
+          <p class="tutorial-media-detail">Hold the crown to disable water lock, then rotate and select an option to pause, resume, or end the session when you need a quick break or a finished workout.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <span class="gif-placeholder">GIF 3</span>
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">End workout</p>
+          <p class="tutorial-media-detail">Hold the crown to disable water lock, then select "Save & Finish" to end the workout and add it to your workout history.</p>
         </figcaption>
       </figure>
     </div>
