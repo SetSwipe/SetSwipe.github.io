@@ -400,7 +400,7 @@ img {
   );
   border-color: rgba(154, 209, 212, 0.56);
   color: var(--white);
-  box-shadow: 0 14px 32px rgba(40, 75, 99, 0.38);
+  box-shadow: 0 12px 28px rgba(40, 75, 99, 0.3);
 }
 
 :root[data-theme="light"] .tutorial-tab:hover,
@@ -480,6 +480,7 @@ img {
 }
 
 .tutorial-media-card {
+  margin: 0;
   padding: 1rem;
   border-color: rgba(154, 209, 212, 0.18);
   background: linear-gradient(
@@ -587,6 +588,7 @@ img {
 .gif-frame-portrait {
   width: min(100%, 280px);
   margin-inline: auto;
+  justify-self: center;
 }
 
 .gif-placeholder {
