@@ -28,7 +28,6 @@ permalink: /tutorial/
       Experienced Swimmer
     </button>
     <button class="tutorial-tab tutorial-tab-watch" type="button" role="tab" aria-selected="false" aria-controls="watch-tutorial-panel" id="watch-tutorial-tab" data-target="watch-tutorial-panel">
-      <span class="tutorial-tab-icon" aria-hidden="true"><span class="tutorial-tab-icon-glyph">⌚</span></span>
       <span class="tutorial-tab-label">Watch Tutorial</span>
     </button>
   </nav>

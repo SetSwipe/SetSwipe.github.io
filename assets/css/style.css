@@ -413,37 +413,8 @@ img {
   box-shadow: 0 8px 18px rgba(40, 75, 99, 0.1);
 }
 
-.tutorial-tab-icon {
-  font-size: 1.05em;
-  line-height: 1;
-}
-
 .tutorial-tab-watch {
   border-style: solid;
-}
-
-.tutorial-tab-watch .tutorial-tab-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 999px;
-  background: rgba(154, 209, 212, 0.16);
-  border: 1px solid rgba(154, 209, 212, 0.28);
-  color: var(--accent-soft);
-  flex: 0 0 auto;
-}
-
-.tutorial-tab-icon-glyph {
-  display: block;
-  line-height: 1;
-  transform: translateY(1px);
-}
-
-.tutorial-tab-watch.is-active .tutorial-tab-icon {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.22);
-  color: var(--white);
 }
 
 .tutorial-track {
@@ -586,7 +557,7 @@ img {
 }
 
 .gif-frame-portrait {
-  width: min(100%, 280px);
+  width: min(100%, 220px);
   margin-inline: auto;
   justify-self: center;
 }
@@ -1249,7 +1220,7 @@ img {
   }
 
   .gif-frame-portrait {
-    width: min(100%, 240px);
+    width: min(100%, 200px);
   }
 
   .photo-frame {
@@ -1437,7 +1408,7 @@ img {
   }
 
   .gif-frame-portrait {
-    width: min(100%, 220px);
+    width: min(100%, 180px);
   }
 
   .hero-library-frame {
@@ -1486,7 +1457,7 @@ img {
   }
 
   .gif-frame-portrait {
-    width: min(100%, 190px);
+    width: min(100%, 160px);
   }
 
   .member-profile {

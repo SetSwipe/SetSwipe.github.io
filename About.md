@@ -38,13 +38,13 @@ permalink: /
         <span>Companion interface for workout timing and set progression</span>
       </div>
       <div class="mini-stat">
-        <strong>Postgres</strong>
+        <strong>PostgreSQL</strong>
         <span>Persistent relational data layer for the app’s core records and syncing</span>
       </div>
     </div>
 
     <div class="photo-frame hero-library-frame">
-      <img class="hero-library-image" src="{{ '/assets/media/library.jpg' | relative_url }}" alt="SetSwipe workout library">
+      <img class="hero-library-image" src="{{ '/assets/media/library.png' | relative_url }}" alt="SetSwipe workout library">
     </div>
 
   </div>
@@ -69,7 +69,7 @@ permalink: /
   <article class="panel">
     <h2>Core Technologies</h2>
     <p>
-      The project uses React Native + Expo, Django, Postgres, REST-style APIs,
+      The project uses React Native + Expo, Django, PostgreSQL, REST-style APIs,
       and a watchOS SwiftUI prototype.
     </p>
   </article>
