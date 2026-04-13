@@ -91,7 +91,7 @@ permalink: /tutorial/
       <p class="eyebrow">Profile 2</p>
       <h2>Social Swimmer</h2>
       <p>
-        This path is built around workouts with friends. It adding friends, creating workouts together, sharing workouts, and competing with friends.
+        This path is built around workouts with friends. It highlights adding friends, creating workouts together, sharing workouts, and competing with friends.
       </p>
     </div>
 
@@ -236,21 +236,21 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <img src="{{ '/assets/media/rest.GIF' | relative_url }}" alt="View rest">
-        </div>
-        <figcaption>
-          <p class="tutorial-media-caption">View rest</p>
-          <p class="tutorial-media-detail">See a countdown of how much rest you have left, as well as the upcoming set.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="tutorial-media-card">
-        <div class="gif-frame gif-frame-portrait">
           <img src="{{ '/assets/media/paceIndicator.GIF' | relative_url }}" alt="Pace indicator">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Pace indicator</p>
           <p class="tutorial-media-detail">A green ring indicates you are on pace, while a red one indicates behind pace.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <img src="{{ '/assets/media/rest.GIF' | relative_url }}" alt="View rest">
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">View rest</p>
+          <p class="tutorial-media-detail">See a countdown of how much rest you have left, as well as the upcoming set.</p>
         </figcaption>
       </figure>
 
