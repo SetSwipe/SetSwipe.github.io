@@ -277,6 +277,7 @@ img {
 }
 
 .menu-toggle-icon {
+  display: block;
   font-size: 1.2rem;
   line-height: 1;
 }
@@ -375,6 +376,7 @@ img {
   font-size: 1.03rem;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(40, 75, 99, 0.18);
 }
 
 .tutorial-tab:hover,
@@ -386,6 +388,8 @@ img {
   );
   border-color: rgba(154, 209, 212, 0.44);
   color: var(--white);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(40, 75, 99, 0.3);
 }
 
 .tutorial-tab.is-active {
@@ -396,7 +400,17 @@ img {
   );
   border-color: rgba(154, 209, 212, 0.56);
   color: var(--white);
-  box-shadow: 0 10px 24px rgba(40, 75, 99, 0.22);
+  box-shadow: 0 14px 32px rgba(40, 75, 99, 0.38);
+}
+
+:root[data-theme="light"] .tutorial-tab:hover,
+:root[data-theme="light"] .tutorial-tab:focus-visible,
+:root[data-theme="light"] .tutorial-tab.is-active {
+  box-shadow: 0 12px 28px rgba(40, 75, 99, 0.18);
+}
+
+:root[data-theme="light"] .tutorial-tab {
+  box-shadow: 0 8px 18px rgba(40, 75, 99, 0.1);
 }
 
 .tutorial-tab-icon {
@@ -420,6 +434,12 @@ img {
   flex: 0 0 auto;
 }
 
+.tutorial-tab-icon-glyph {
+  display: block;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
 .tutorial-tab-watch.is-active .tutorial-tab-icon {
   background: rgba(255, 255, 255, 0.14);
   border-color: rgba(255, 255, 255, 0.22);
@@ -440,7 +460,7 @@ img {
 }
 
 .tutorial-track-header {
-  max-width: 68ch;
+  max-width: none;
   margin-bottom: 1.15rem;
 }
 
@@ -500,11 +520,42 @@ img {
   line-height: 1.6;
 }
 
+.tutorial-card-button {
+  margin-top: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(154, 209, 212, 0.24);
+  background: rgba(154, 209, 212, 0.1);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tutorial-card-button:hover,
+.tutorial-card-button:focus-visible {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 14px 32px rgba(40, 75, 99, 0.42);
+}
+
+:root[data-theme="light"] .tutorial-card-button:hover,
+:root[data-theme="light"] .tutorial-card-button:focus-visible {
+  box-shadow: 0 14px 32px rgba(40, 75, 99, 0.2);
+}
+
 .gif-frame {
   border-radius: 14px;
   border: 1px dashed rgba(154, 209, 212, 0.34);
   background:
-    radial-gradient(circle at top left, rgba(154, 209, 212, 0.18), transparent 42%),
+    radial-gradient(
+      circle at top left,
+      rgba(154, 209, 212, 0.18),
+      transparent 42%
+    ),
     linear-gradient(180deg, rgba(40, 75, 99, 0.45), rgba(0, 0, 0, 0.9));
   display: grid;
   place-items: center;
@@ -520,13 +571,21 @@ img {
 
 :root[data-theme="light"] .gif-frame {
   background:
-    radial-gradient(circle at top left, rgba(154, 209, 212, 0.26), transparent 42%),
-    linear-gradient(180deg, rgba(154, 209, 212, 0.24), rgba(255, 255, 255, 0.98));
+    radial-gradient(
+      circle at top left,
+      rgba(154, 209, 212, 0.26),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(154, 209, 212, 0.24),
+      rgba(255, 255, 255, 0.98)
+    );
   border-color: rgba(60, 110, 113, 0.18);
 }
 
 .gif-frame-portrait {
-  width: min(100%, 320px);
+  width: min(100%, 280px);
   margin-inline: auto;
 }
 
@@ -660,6 +719,10 @@ img {
     rgba(255, 255, 255, 0.98)
   );
   border-color: rgba(60, 110, 113, 0.16);
+}
+
+:root[data-theme="light"] .mini-stat strong {
+  color: var(--text);
 }
 
 .mini-stat strong {
@@ -963,6 +1026,12 @@ img {
   display: block;
 }
 
+.member-headshot-jaxon {
+  object-position: center top;
+  transform: scale(1.75) translateY(-5%);
+  transform-origin: center top;
+}
+
 .member-headshot-isabella {
   object-position: center center;
   transform: translateY(-14%);
@@ -1056,7 +1125,7 @@ img {
   .download-card:hover,
   .detail-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 12px 28px rgba(40, 75, 99, 0.3);
   }
 
   :root[data-theme="light"] .panel:hover,
@@ -1067,7 +1136,7 @@ img {
   :root[data-theme="light"] .coming-soon:hover,
   :root[data-theme="light"] .download-card:hover,
   :root[data-theme="light"] .detail-card:hover {
-    box-shadow: 0 16px 34px rgba(40, 75, 99, 0.12);
+    box-shadow: 0 12px 28px rgba(40, 75, 99, 0.18);
   }
 
   .panel:hover,
@@ -1178,7 +1247,7 @@ img {
   }
 
   .gif-frame-portrait {
-    width: min(100%, 280px);
+    width: min(100%, 240px);
   }
 
   .photo-frame {
@@ -1249,6 +1318,10 @@ img {
     right: 0;
   }
 
+  .menu-toggle-icon {
+    transform: translateY(-1px);
+  }
+
   :root.menu-open .menu-toggle {
     top: 0;
   }
@@ -1290,6 +1363,10 @@ img {
     width: 76px;
     height: 76px;
     font-size: 1.35rem;
+  }
+
+  .member-headshot-jaxon {
+    transform: scale(1.08);
   }
 
   .member-profile {
@@ -1357,6 +1434,10 @@ img {
     min-height: 180px;
   }
 
+  .gif-frame-portrait {
+    width: min(100%, 220px);
+  }
+
   .hero-library-frame {
     min-height: 160px;
   }
@@ -1396,6 +1477,14 @@ img {
     width: 68px;
     height: 68px;
     font-size: 1.2rem;
+  }
+
+  .member-headshot-jaxon {
+    transform: scale(1.04);
+  }
+
+  .gif-frame-portrait {
+    width: min(100%, 190px);
   }
 
   .member-profile {

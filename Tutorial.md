@@ -21,14 +21,14 @@ permalink: /tutorial/
     <button class="tutorial-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="beginner-swimmer-panel" id="beginner-swimmer-tab" data-target="beginner-swimmer-panel">
       Beginner Swimmer
     </button>
-    <button class="tutorial-tab" type="button" role="tab" aria-selected="false" aria-controls="experienced-swimmer-panel" id="experienced-swimmer-tab" data-target="experienced-swimmer-panel">
-      Experienced Swimmer
-    </button>
     <button class="tutorial-tab" type="button" role="tab" aria-selected="false" aria-controls="social-swimmer-panel" id="social-swimmer-tab" data-target="social-swimmer-panel">
       Social Swimmer
     </button>
+    <button class="tutorial-tab" type="button" role="tab" aria-selected="false" aria-controls="experienced-swimmer-panel" id="experienced-swimmer-tab" data-target="experienced-swimmer-panel">
+      Experienced Swimmer
+    </button>
     <button class="tutorial-tab tutorial-tab-watch" type="button" role="tab" aria-selected="false" aria-controls="watch-tutorial-panel" id="watch-tutorial-tab" data-target="watch-tutorial-panel">
-      <span class="tutorial-tab-icon" aria-hidden="true">⌚</span>
+      <span class="tutorial-tab-icon" aria-hidden="true"><span class="tutorial-tab-icon-glyph">⌚</span></span>
       <span class="tutorial-tab-label">Watch Tutorial</span>
     </button>
   </nav>
@@ -38,9 +38,7 @@ permalink: /tutorial/
       <p class="eyebrow">Profile 1</p>
       <h2>Beginner Swimmer</h2>
       <p>
-        This path focuses on the simplest way to get moving: learn the app
-        layout, build a first workout, and understand what each set means before
-        you start collaborating with other swimmers.
+        This path focuses on the simplest way to get moving: set preferences, learn swimming terms, and find or create your first workout.
       </p>
     </div>
 
@@ -89,69 +87,12 @@ permalink: /tutorial/
 
   </section>
 
-  <section class="tutorial-track" id="experienced-swimmer-panel" role="tabpanel" aria-labelledby="experienced-swimmer-tab" hidden>
-    <div class="tutorial-track-header">
-      <p class="eyebrow">Profile 2</p>
-      <h2>Experienced Swimmer</h2>
-      <p>
-        This path is for swimmers who already know their pace and want to move
-        quickly. It highlights faster navigation, workout customization, and
-        efficient session planning.
-      </p>
-    </div>
-
-    <div class="tutorial-media-list">
-      <figure class="tutorial-media-card">
-        <div class="gif-frame gif-frame-portrait">
-          <img src="{{ '/assets/media/manual.GIF' | relative_url }}" alt="Manual workout generation">
-        </div>
-        <figcaption>
-          <p class="tutorial-media-caption">Manual workout creation</p>
-          <p class="tutorial-media-detail">Creating a manual workout allows for maximal control and customization. Select this option from the create workout page, then fill it in with sets from your library or create a new custom set.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="tutorial-media-card">
-        <div class="gif-frame gif-frame-portrait">
-          <img src="{{ '/assets/media/newSet.GIF' | relative_url }}" alt="Add set screen">
-        </div>
-        <figcaption>
-          <p class="tutorial-media-caption">Adding a set to a workout</p>
-          <p class="tutorial-media-detail">When creating a custom set, fill in the number of repetitions, distance, stroke, style, interval, and effort. You can also group “steps” together to keep them connected in the workout.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="tutorial-media-card">
-        <div class="gif-frame gif-frame-portrait">
-          <img src="{{ '/assets/media/allSets.GIF' | relative_url }}" alt="All sets screen">
-        </div>
-        <figcaption>
-          <p class="tutorial-media-caption">View and edit your collection of sets</p>
-          <p class="tutorial-media-detail">View the all sets page to delete sets, favorite them, and create new ones. Your favorite sets will show up more frequently when generating workouts by swiping or with automatic creation.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="tutorial-media-card">
-        <div class="gif-frame gif-frame-portrait">
-          <img src="{{ '/assets/media/watch.GIF' | relative_url }}" alt="Connect to watch">
-        </div>
-        <figcaption>
-          <p class="tutorial-media-caption">Record a workout on your Apple watch</p>
-          <p class="tutorial-media-detail">At the pool, click “Record workout” then “Track with watch” to view the workout live on your Apple watch. This application tracks your distance to keep you updated in real time about your pace, then sends the completed workout back to your phone to show in your history.</p>
-        </figcaption>
-      </figure>
-    </div>
-
-  </section>
-
   <section class="tutorial-track" id="social-swimmer-panel" role="tabpanel" aria-labelledby="social-swimmer-tab" hidden>
     <div class="tutorial-track-header">
-      <p class="eyebrow">Profile 3</p>
+      <p class="eyebrow">Profile 2</p>
       <h2>Social Swimmer</h2>
       <p>
-        This path is built around workouts with friends. It covers inviting
-        people, joining a shared session, and keeping the group workflow clear
-        from planning through completion.
+        This path is built around workouts with friends. It adding friends, creating workouts together, sharing workouts, and competing with friends.
       </p>
     </div>
 
@@ -193,6 +134,61 @@ permalink: /tutorial/
         <figcaption>
           <p class="tutorial-media-caption">Compete with friends</p>
           <p class="tutorial-media-detail">From your profile, you can view the leaderboard to see the stats of your friends. Compare how far you and your friends have swum this week, this month, or of all time. Also, keep an how many consecutive weeks each friend has reached their target swimming frequency.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+  <section class="tutorial-track" id="experienced-swimmer-panel" role="tabpanel" aria-labelledby="experienced-swimmer-tab" hidden>
+    <div class="tutorial-track-header">
+      <p class="eyebrow">Profile 3</p>
+      <h2>Experienced Swimmer</h2>
+      <p>
+        This path is for swimmers who already know their pace and want to move
+        quickly. It highlights workout and set customization as well as live workout tracking.
+      </p>
+    </div>
+
+    <div class="tutorial-media-list">
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <img src="{{ '/assets/media/manual.GIF' | relative_url }}" alt="Manual workout generation">
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">Manual workout creation</p>
+          <p class="tutorial-media-detail">Creating a manual workout allows for maximal control and customization. Select this option from the create workout page, then fill it in with sets from your library or create a new custom set.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <img src="{{ '/assets/media/newSet.GIF' | relative_url }}" alt="Add set screen">
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">Adding a set to a workout</p>
+          <p class="tutorial-media-detail">When creating a custom set, fill in the number of repetitions, distance, stroke, style, interval, and effort. You can also group “steps” together to keep them connected in the workout.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <img src="{{ '/assets/media/allSets.GIF' | relative_url }}" alt="All sets screen">
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">View and edit your collection of sets</p>
+          <p class="tutorial-media-detail">View the all sets page to delete sets, favorite them, and create new ones. Your favorite sets will show up more frequently when generating workouts by swiping or with automatic creation.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="tutorial-media-card">
+        <div class="gif-frame gif-frame-portrait">
+          <img src="{{ '/assets/media/watch.GIF' | relative_url }}" alt="Connect to watch">
+        </div>
+        <figcaption>
+          <p class="tutorial-media-caption">Record a workout on your Apple watch</p>
+          <p class="tutorial-media-detail">At the pool, click “Record workout” then “Track with watch” to view the workout live on your Apple watch. This application tracks your distance to keep you updated in real time about your pace, then sends the completed workout back to your phone to show in your history.</p>
+          <button class="tutorial-card-button" type="button" data-target="watch-tutorial-panel">Open Watch Tutorial</button>
         </figcaption>
       </figure>
     </div>
@@ -249,6 +245,7 @@ permalink: /tutorial/
   (function () {
     var tabs = Array.prototype.slice.call(document.querySelectorAll(".tutorial-tab[role='tab']"));
     var panels = Array.prototype.slice.call(document.querySelectorAll(".tutorial-track[role='tabpanel']"));
+    var cardButtons = Array.prototype.slice.call(document.querySelectorAll(".tutorial-card-button[data-target]"));
 
     if (!tabs.length || !panels.length) {
       return;
@@ -269,6 +266,19 @@ permalink: /tutorial/
         panel.classList.toggle("is-active", isActive);
         panel.hidden = !isActive;
       });
+    };
+
+    var activateByTarget = function (targetId) {
+      var targetTab = document.querySelector(".tutorial-tab[role='tab'][data-target='" + targetId + "']");
+      var targetPanel = document.getElementById(targetId);
+
+      if (targetTab) {
+        activateTab(targetTab);
+      }
+
+      if (targetPanel && typeof targetPanel.scrollIntoView === "function") {
+        targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     };
 
     tabs.forEach(function (tab) {
@@ -295,6 +305,12 @@ permalink: /tutorial/
         event.preventDefault();
         tabs[nextIndex].focus();
         activateTab(tabs[nextIndex]);
+      });
+    });
+
+    cardButtons.forEach(function (cardButton) {
+      cardButton.addEventListener("click", function () {
+        activateByTarget(cardButton.getAttribute("data-target"));
       });
     });
 

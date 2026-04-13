@@ -38,8 +38,8 @@ permalink: /
         <span>Companion interface for workout timing and set progression</span>
       </div>
       <div class="mini-stat">
-        <strong>SQLite</strong>
-        <span>Local storage and sync-friendly mobile data access</span>
+        <strong>Postgres</strong>
+        <span>Persistent relational data layer for the app’s core records and syncing</span>
       </div>
     </div>
 
@@ -55,8 +55,8 @@ permalink: /
   <article class="panel">
     <h2>The Problem</h2>
     <p>
-      Swim workouts must balance time, distance, stroke, and effort, and that
-      planning is repetitive when multiple swimmers are involved.
+      Swimmers practicing outside of a structured team environment suffer from
+      burnout and struggle to create engaging, yet challenging workouts.
     </p>
   </article>
   <article class="panel">
@@ -69,8 +69,8 @@ permalink: /
   <article class="panel">
     <h2>Core Technologies</h2>
     <p>
-      The project uses React Native + Expo, Django, local storage, REST-style
-      APIs, and a watchOS SwiftUI prototype.
+      The project uses React Native + Expo, Django, Postgres, REST-style APIs,
+      and a watchOS SwiftUI prototype.
     </p>
   </article>
 </section>

@@ -1,20 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}{% if page.title and page.title != 'About' %} | {{ page.title }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace }}">
-    <link rel="icon" type="image/png" href="{{ '/assets/images/setswipe-logo.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{ site.title }}{% if page.title and page.title != 'About' %} | {{
+      page.title }}{% endif %}
+    </title>
+    <meta
+      name="description"
+      content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ '/assets/images/setswipe-logo.png' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
     <script>
       (function () {
         var storedTheme = null;
         try {
           storedTheme = localStorage.getItem("setswipe-theme");
         } catch (error) {}
-        var theme = storedTheme || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme =
+          storedTheme ||
+          (window.matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark");
         document.documentElement.setAttribute("data-theme", theme);
       })();
     </script>
@@ -29,7 +46,7 @@
                 class="brand-logo"
                 src="{{ '/assets/images/setswipe-logo.png' | relative_url }}"
                 alt="SetSwipe logo"
-              >
+              />
               <span class="brand-text">SetSwipe</span>
             </a>
 
@@ -46,27 +63,52 @@
 
           <div class="header-actions" id="site-nav-panel">
             <nav class="site-nav" aria-label="Primary navigation">
-              <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>About</a>
-              <a href="{{ '/download/' | relative_url }}" {% if page.url == '/download/' %}aria-current="page"{% endif %}>Download</a>
-              <a href="{{ '/team/' | relative_url }}" {% if page.url == '/team/' %}aria-current="page"{% endif %}>Team</a>
-              <a href="{{ '/tutorial/' | relative_url }}" {% if page.url == '/tutorial/' %}aria-current="page"{% endif %}>Tutorial</a>
+              <a
+                href="{{ '/' | relative_url }}"
+                {% if page.url == "/" %}aria-current="page"{% endif %}
+                >About</a
+              >
+              <a
+                href="{{ '/download/' | relative_url }}"
+                {% if page.url == "/download/" %}aria-current="page"{% endif %}
+                >Download</a
+              >
+              <a
+                href="{{ '/team/' | relative_url }}"
+                {% if page.url == "/team/" %}aria-current="page"{% endif %}
+                >Team</a
+              >
+              <a
+                href="{{ '/tutorial/' | relative_url }}"
+                {% if page.url == "/tutorial/" %}aria-current="page"{% endif %}
+                >Tutorial</a
+              >
             </nav>
 
-            <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
-              <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
-              <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle light and dark mode"
+            >
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"
+                >☾</span
+              >
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"
+                >☀</span
+              >
             </button>
           </div>
         </div>
       </header>
 
-      <main class="wrap page-content">
-        {{ content }}
-      </main>
+      <main class="wrap page-content">{{ content }}</main>
 
       <footer class="site-footer">
         <div class="wrap footer-inner">
-          <p><a href="mailto:setswipe25@gmail.com">Contact</a></p>
+          <p class="footer-copyright">© 2026 SetSwipe</p>
+          <p class="footer-email">
+            <a href="mailto:setswipe25@gmail.com" aria-label="Email">Email</a>
+          </p>
         </div>
       </footer>
     </div>
@@ -80,7 +122,10 @@
         var applyTheme = function (theme) {
           root.setAttribute("data-theme", theme);
           if (themeButton) {
-            themeButton.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+            themeButton.setAttribute(
+              "aria-label",
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+            );
           }
         };
 

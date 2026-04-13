@@ -12,6 +12,9 @@ permalink: /team/
       This University of Utah Capstone project was developed during the
       2025-2026 academic year.
     </p>
+    <div class="button-row">
+      <a class="button button-secondary" href="mailto:setswipe25@gmail.com">Email Us</a>
+    </div>
   </div>
   <div class="photo-frame team-photo-frame team-title-photo-frame">
     <img src="{{ '/assets/images/team-pool.png' | relative_url }}" alt="SetSwipe team at the pool">
@@ -109,10 +112,10 @@ permalink: /team/
   </article>
 
   <article class="member-card placeholder">
-    <div class="member-profile">
-      <div class="member-headshot member-headshot-placeholder">JS</div>
-      <h2>Jaxon Smith</h2>
+    <div class="member-headshot member-headshot-photo">
+      <img class="member-headshot-jaxon" src="{{ '/assets/media/jaxon.jpg' | relative_url }}" alt="Jaxon Smith headshot">
     </div>
+    <h2>Jaxon Smith</h2>
     <p>
       My name is Jaxon Smith, I am a student at the University of Utah, pursuing a BS/MS in Computer Science and Computing, with both tracks in Artificial Intelligence. I have focused on back end development, focusing on using data to find ways to improve and broaden the audience of tools. My passion comes from wanting to build useful and meaningful tools and systems using software since it allows for a low cost and barrier of entry both for use and development. 
     </p>
