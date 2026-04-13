@@ -220,7 +220,7 @@ permalink: /tutorial/
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Start the session</p>
-          <p class="tutorial-media-detail">Enable water lock and view the first set.</p>
+          <p class="tutorial-media-detail">Enable water lock and get ready to swim by previewing the first set.</p>
         </figcaption>
       </figure>
 
