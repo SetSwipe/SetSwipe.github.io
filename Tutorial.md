@@ -206,7 +206,7 @@ permalink: /tutorial/
     <div class="tutorial-media-list">
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 1</span>
+          <img src="{{ '/assets/media/watch.GIF' | relative_url }}" alt="Record watch workout">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Record a workout on your Apple watch</p>
@@ -214,9 +214,9 @@ permalink: /tutorial/
         </figcaption>
       </figure>
 
-      <figure class="tutorial-media-card">
+      <figure class="tutorial-media-card tutorial-media-card-centered">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 2</span>
+          <img src="{{ '/assets/media/startingWatch.GIF' | relative_url }}" alt="Watch starting">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Start the session</p>
@@ -226,7 +226,7 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 3</span>
+          <img src="{{ '/assets/media/viewSet.GIF' | relative_url }}" alt="View set on watch">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">View a set</p>
@@ -236,7 +236,7 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 3</span>
+          <img src="{{ '/assets/media/rest.GIF' | relative_url }}" alt="View rest">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">View rest</p>
@@ -246,7 +246,7 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 3</span>
+          <img src="{{ '/assets/media/paceIndicator.GIF' | relative_url }}" alt="Pace indicator">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Pace indicator</p>
@@ -256,7 +256,7 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 3</span>
+          <img src="{{ '/assets/media/pause.GIF' | relative_url }}" alt="Pause, resume, or end">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">Pause or end cleanly</p>
@@ -266,7 +266,7 @@ permalink: /tutorial/
 
       <figure class="tutorial-media-card">
         <div class="gif-frame gif-frame-portrait">
-          <span class="gif-placeholder">GIF 3</span>
+          <img src="{{ '/assets/media/saveAndFinish.GIF' | relative_url }}" alt="Save & Finish">
         </div>
         <figcaption>
           <p class="tutorial-media-caption">End workout</p>

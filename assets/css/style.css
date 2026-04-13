@@ -473,6 +473,12 @@ img {
 .tutorial-media-card figcaption {
   margin-top: 0.9rem;
 }
+.tutorial-media-card-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .tutorial-media-caption,
 .tutorial-media-detail {
