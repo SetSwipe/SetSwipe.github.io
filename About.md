@@ -44,7 +44,7 @@ permalink: /
     </div>
 
     <div class="photo-frame hero-library-frame">
-      <img class="hero-library-image" src="{{ '/assets/media/library.png' | relative_url }}" alt="SetSwipe workout library">
+      <img class="hero-library-image" src="{{ '/assets/media/library.PNG' | relative_url }}" alt="SetSwipe workout library">
     </div>
 
   </div>
